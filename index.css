@@ -391,6 +391,10 @@ body {
   border-radius: 17px;
   border: none;
   text-transform: capitalize;
-  background-color: #f9bf4b;
+  background-color: black;
   color: white;
+}
+.s2-cv-btn:hover{
+    background-color: #f9bf4b;
+    color: white;
 }
