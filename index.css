@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 320px) {
+  #section-one-mobile {
+    display: block;
+  }
+  #section-one-tablet {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .nav-logo {
+    width: 85px;
+    height: 50px;
+  }
+
+  .menu-ul {
+    padding: 10px;
+    list-style: none;
+    display: none;
+    background-color: black;
+    color: white;
+  }
+
+  .menu-list {
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .menu-list:hover {
+    color: #f9bf4b;
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f9bf4b; /* Change the line's color as desired */
+    transition: width 0.3s;
+  }
+
+  /* When hovering over the name, animate the line's width to move it from left to right */
+  .menu-list:hover .line {
+    width: 100%;
+  }
+
+  .home-splitting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .home-splitting > .left {
+    background-color: #ebefff;
+    width: 50%;
+    height: 400px;
+  }
+
+  .home-splitting > .right {
+    background-color: #ffffff;
+    width: 50%;
+    height: 400px;
+  }
+
+  .home-splitting > .text-span {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .text-span > span {
+    color: #f9bf4b;
+    font-size: 18px;
+  }
+
+  @keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  [transition-style="in:wipe:down"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+  }
+
+  @keyframes wipe-out-up {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+
+    to {
+      clip-path: inset(0 0 100% 0);
+    }
+  }
+
+  [transition-style="out:wipe:up"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-out-up both;
+  }
+
+  /* auto type name effect */
+  #intro-text {
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  #auto-typing-text {
+    color: #f9bf4b;
+    text-transform: capitalize;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  #section-one-mobile {
+    display: block;
+  }
+  #section-one-tablet {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .nav-logo {
+    width: 85px;
+    height: 50px;
+  }
+
+  .menu-ul {
+    padding: 10px;
+    list-style: none;
+    display: none;
+    background-color: black;
+    color: white;
+  }
+  .menu-list {
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .menu-list:hover {
+    color: #f9bf4b;
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f9bf4b; /* Change the line's color as desired */
+    transition: width 0.3s;
+  }
+
+  /* When hovering over the name, animate the line's width to move it from left to right */
+  .menu-list:hover .line {
+    width: 100%;
+  }
+
+  .home-splitting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .home-splitting > .left {
+    background-color: #ebefff;
+    width: 50%;
+    height: 400px;
+  }
+
+  .home-splitting > .right {
+    background-color: #ffffff;
+    width: 50%;
+    height: 400px;
+  }
+
+  .home-splitting > .text-span {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .text-span > span {
+    color: #f9bf4b;
+    font-size: 18px;
+  }
+
+  @keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  [transition-style="in:wipe:down"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+  }
+
+  @keyframes wipe-out-up {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+
+    to {
+      clip-path: inset(0 0 100% 0);
+    }
+  }
+
+  [transition-style="out:wipe:up"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-out-up both;
+  }
+
+  /* auto type name effect */
+  #intro-text {
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  #auto-typing-text {
+    color: #f9bf4b;
+    text-transform: capitalize;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #section-one-mobile {
+    display: none;
+  }
+
+  #section-one-tablet {
+    display: block;
+  }
+
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-logo,
+  .nav-logo > img {
+    width: 150px;
+    height: 90px;
+  }
+  .menu-list {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .menu-list:hover {
+    color: #f9bf4b;
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f9bf4b; /* Change the line's color as desired */
+    transition: width 0.3s;
+  }
+
+  /* When hovering over the name, animate the line's width to move it from left to right */
+  .menu-list:hover .line {
+    width: 100%;
+  }
+}
