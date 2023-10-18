@@ -338,7 +338,7 @@ body {
 }
 .s2-image-container {
   width: 300px;
-  margin: auto;
+  margin: 36px 10px 0 10px;
 }
 .s2-image-container > img {
   width: 300px;
