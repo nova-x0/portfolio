@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"> <!-- link font -->
-    <link rel="stylesheet" href="index.css"> <!-- link index page css -->
+    <link rel="stylesheet" href="style.css"> <!-- link index page css -->
 
 </head>
 
@@ -26,10 +26,10 @@
             </h3>
         </nav>
         <ul class="menu-ul">
-            <li class="menu-list"><a href="#section-one-mobile">home</a>
+            <li class="menu-list"><a href="#home">home</a>
                 <div class="line"></div>
             </li>
-            <li class="menu-list"><a href="#section-2">about</a>
+            <li class="menu-list"><a href="#about">about</a>
                 <div class="line"></div>
             </li>
             <li class="menu-list"><a href="#id3">resume</a>
@@ -56,32 +56,32 @@
                 <img src="logo-removebg-preview.png" alt="logo">
             </div>
             <ul class="menu-ul">
-                <li class="menu-list">home
+                <li class="menu-list"><a href="#home">home</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">about
+                <li class="menu-list"><a href="#about">about</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">resume
+                <li class="menu-list"><a href="#id3">resume</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">services
+                <li class="menu-list"><a href="#id4">services</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">projects
+                <li class="menu-list"><a href="#id5">projects</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">my blog
+                <li class="menu-list"><a href="#id6">my blog</a>
                     <div class="line"></div>
                 </li>
-                <li class="menu-list">contact
+                <li class="menu-list"><a href="#id7">contact</a>
                     <div class="line"></div>
                 </li>
             </ul>
         </nav>
     </section>
     <!-- split section -->
-    <div class="home-splitting">
+    <div class="home-splitting" id="home">
         <div class="left"></div>
         <div class="right"></div>
         <span class="text-span"><span>hey! i am</span> <br> daniyal shakeel <br>
@@ -92,18 +92,21 @@
     </div>
 
     <!-- section 2 -->
-    <div class="s2-image-container">
-        <img src="myPicture.jpg"
-            alt="my_photo">
-    </div>
-    <section id="section-2">
-        <div class="s2-title-nd-intro">
-            <h3 class="s2-title">about me
-            </h3>
-            <p class="s2-intro">I'm Daniyal Shakeel, a web developer,
-                designer, and problem solver with 2 years
-                of experience. Currently a semester 3 student, passionate about creating innovative web solutions.</p>
-            <pre class="s2-pre">
+    <section id="about">
+        <div class="section-2-pic-nd-about">
+            <div class="s2-image-container">
+                <img src="myPicture.jpg" alt="my_photo">
+            </div>
+            <section id="section-2">
+                <div class="s2-title-nd-intro">
+                    <h3 class="s2-title">about me
+                    </h3>
+                    <p class="s2-intro">I'm Daniyal Shakeel, a web developer,
+                        designer, and problem solver with 2 years
+                        of experience. Currently a semester 3 student, passionate about creating innovative web
+                        solutions.
+                    </p>
+                    <pre class="s2-pre">
 <span>Name:</span>               Malik Daniyal Shakeel
 <br>
 <span>Date of Birth:</span>   22 Dec 2004
@@ -118,13 +121,15 @@
 <br>
 <span>Whatsapp:</span>      +92 326 5397380
 <br></pre>
+                </div>
+                <div class="s2-projects-completion"><span>120</span> Projects completed</div>
+                <button class="s2-cv-btn">download cv</button>
+            </section>
         </div>
-        <div class="s2-projects-completion"><span>120</span> Projects completed</div>
-        <button class="s2-cv-btn">download cv</button>
+
     </section>
 
-
 </body>
-<script src="index.js"></script> <!-- link index page js -->
+<script src="script.js"></script> <!-- link index page js -->
 
 </html>
