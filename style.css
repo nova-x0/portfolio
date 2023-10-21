@@ -345,11 +345,19 @@ body {
 @media only screen and (max-width: 768px) {
   .home-splitting {
     top: 70px;
+    height: 80vh;
+  }
+  .home-splitting > .left {
+    height: 80vh;
   }
 }
 @media only screen and (min-width: 768px) {
   .home-splitting {
     top: 110px;
+    height: 80vh;
+  }
+  .home-splitting > .left {
+    height: 80vh;
   }
 }
 
@@ -543,69 +551,47 @@ body {
 }
 /*---------------- section 3 ---------------*/
 
-@media only screen and (min-width:768px) {
-  
-    /* Apply styles to the left panel */                                                                                
-    .left-panel {                                           
-      flex: 1;
-      /* Let the left panel take up available space */
-      overflow-y: auto;
-      /* Allow vertical scrolling */
-      position: sticky;
-      top: 100px;
-      /* Adjust this value as needed */
-      padding: 20px;
-      max-height: 100vh;
-      /* Ensure the left panel doesn't exceed the viewport height */
-      background-color: #fff;
-      /* Change this to match your background color */
+@media only screen and (min-width: 768px) {
+  .left-panel {
+    flex: 1;
+    overflow-y: auto;
+    position: sticky;
+    top: 100px;
+    padding: 20px;
+    max-height: 100vh;
+    background-color: #fff;
   }
 
-  /* Apply styles to the right panel (content) */
   .right-panel {
-      flex: 2;
-      /* Let the right panel take up more space */
-      max-width: 70%;
-      /* Adjust the width as needed */
-      padding: 20px;
-      background-color: #fff;
-      /* Change this to match your background color */
+    flex: 2;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #fff;
   }
 }
-@media only screen and (max-width:768px) {
-  
-    /* Apply styles to the left panel */                                                                                
-    .left-panel {                                           
-      flex: 1;
-      /* Let the left panel take up available space */
-      overflow-y: auto;
-      /* Allow vertical scrolling */
-      position: sticky;
-      top: 100px;
-      /* Adjust this value as needed */
-      padding: 20px;
-      max-height: 100vh;
-      /* Ensure the left panel doesn't exceed the viewport height */
-      background-color: #fff;
-      /* Change this to match your background color */
+@media only screen and (max-width: 768px) {
+  .left-panel {
+    flex: 1;
+    overflow-y: auto;
+    position: sticky;
+    top: 100px;
+    padding: 20px;
+    max-height: 100vh;
+    background-color: #fff;
   }
 
-  /* Apply styles to the right panel (content) */
   .right-panel {
-      flex: 2;
-      /* Let the right panel take up more space */
-      max-width: 70%;
-      /* Adjust the width as needed */
-      padding: 20px;
-      background-color: #fff;
-      /* Change this to match your background color */
+    flex: 2;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #fff;
   }
 }
-@media only screen and (max-width:768px){
-  .left-panel{
+@media only screen and (max-width: 768px) {
+  .left-panel {
     display: none;
   }
-  .right-panel{
+  .right-panel {
     max-width: 100%;
     position: relative;
     bottom: 100px;
@@ -614,4 +600,3 @@ body {
 }
 
 /*---------------section 4 ------------------*/
-
