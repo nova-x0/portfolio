@@ -62,7 +62,7 @@ function type() {
     }
   }
 
-  const speed = isDeleting ? deleteSpeed : typingSpeed;
+  const speed = isDeleting ? deleteSpeed : typingSpeed; // alternate of if else statements
 
   setTimeout(type, speed);
 }
