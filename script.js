@@ -1,4 +1,7 @@
-// nav bar animation
+
+
+
+  // nav bar animation
 
 let isToggled = false;
 const menuButton = document.querySelector(".nav-menu");
@@ -20,8 +23,8 @@ function toggleMenu() {
     menuUl.style.animationName = "wipe-out-up";
     menuUl.style.animationDuration = "0.5s";
 
-    // Delay hiding the menu to allow the animation to complete
-    setTimeout(() => {
+
+    setTimeout(() => {     // Delay hiding the menu to allow the animation to complete
       menuUl.style.display = "none";
     }, 500);
   }
@@ -33,9 +36,9 @@ function toggleMenu() {
 const textElement = document.getElementById("auto-typing-text");
 const names = [
   "Web Developer.    ",
-  "Web Designer.   ",
+  "Web Designer.   ",    // Your list of names
   "Graphic Designer.   ",
-]; // Your list of names
+];
 const typingSpeed = 200; // Adjust the typing speed (milliseconds per character)
 const deleteSpeed = 50; // Adjust the delete speed (milliseconds per character)
 
@@ -68,13 +71,15 @@ function type() {
   setTimeout(type, speed);
 }
 
-// Start the typing effect when the page loads
-window.onload = type;
+
+window.onload = type;  // Start the typing effect when the page loads
 
 //gsap animation
 
 const splitScreenAnimation = document.querySelector(".home-splitting")
 const sectionTwoAnimation = document.querySelector(".section-2-pic-nd-about")
+
+
 gsap.from(splitScreenAnimation, {
   y:100,
   opacity:0, 
@@ -89,3 +94,28 @@ gsap.from(sectionTwoAnimation, {
   duration:0.9, 
   stagger:0.3
 })
+
+// section - 3 left panel position sticky java script code
+
+
+    // Get references to the sidebar links and the right panel
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+    const rightPanel = document.querySelector('.right-panel');
+
+    // Scroll event listener to handle the scrolling effect
+    rightPanel.addEventListener('scroll', () => {
+        sidebarLinks.forEach(link => {
+            const contentSection = document.getElementById(link.id.replace('-link', ''));
+            const contentRect = contentSection.getBoundingClientRect();
+            if (contentRect.top <= 150 && contentRect.bottom >= 150) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+
+
+    // highlight a specific section on scroll
+
+ 
