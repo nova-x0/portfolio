@@ -71,4 +71,21 @@ function type() {
 // Start the typing effect when the page loads
 window.onload = type;
 
+//gsap animation
 
+const splitScreenAnimation = document.querySelector(".home-splitting")
+const sectionTwoAnimation = document.querySelector(".section-2-pic-nd-about")
+gsap.from(splitScreenAnimation, {
+  y:100,
+  opacity:0, 
+  delay:0.5, 
+  duration:0.9, 
+  stagger:0.3
+})
+gsap.from(sectionTwoAnimation, {
+  y:100,
+  opacity:0, 
+  delay:1, 
+  duration:0.9, 
+  stagger:0.3
+})
