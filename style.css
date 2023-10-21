@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::selection {
+  color: #f9bf4b;
+  background: #000;
+}
 html,
 body {
   scroll-behavior: smooth;
@@ -567,6 +571,86 @@ body {
     max-width: 70%;
     padding: 20px;
     background-color: #fff;
+    width: 90%;
+    margin: auto;
+  }
+  .education-tag,
+  .skills-tag,
+  .certificates-tag,
+  .awards-tag {
+    text-decoration: none;
+    color: black;
+  }
+  /* --------------------- */
+  #resume {
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .sidebar {
+    line-height: 30px;
+    padding: 18px;
+    list-style-type: none;
+  }
+  .sidebar > li {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #education > h3 {
+    color: #eab549;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  .logo-nd-cntnt {
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo-container {
+    width: fit-content;
+  }
+  .logo-container > img {
+    background-color: #eab549;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .right-cntnt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25px;
+  }
+  .right-cntnt-date {
+    font-size: 13px;
+    color: #eab549;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-title-2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+  }
+  hr {
+    background-color: #999999;
+    margin: 20px 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -585,6 +669,86 @@ body {
     max-width: 70%;
     padding: 20px;
     background-color: #fff;
+    width: 90%;
+    margin: auto;
+  }
+  .education-tag,
+  .skills-tag,
+  .certificates-tag,
+  .awards-tag {
+    text-decoration: none;
+    color: black;
+  }
+  /* --------------------- */
+  #resume {
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .sidebar {
+    line-height: 30px;
+    padding: 18px;
+    list-style-type: none;
+  }
+  .sidebar > li {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #education > h3 {
+    color: #eab549;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  .logo-nd-cntnt {
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo-container {
+    width: fit-content;
+  }
+  .logo-container > img {
+    background-color: #eab549;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .right-cntnt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25px;
+  }
+  .right-cntnt-date {
+    font-size: 13px;
+    color: #eab549;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-title-2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .right-cntnt-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+  }
+  hr {
+    background-color: #999999;
+    margin: 20px 0;
   }
 }
 @media only screen and (max-width: 768px) {
